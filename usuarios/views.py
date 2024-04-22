@@ -62,4 +62,4 @@ def login_view(request):
 
 def logout(request):
   auth.logout(request)
-  return render(request, "/usuarios/login")
+  return redirect("/usuarios/login")
